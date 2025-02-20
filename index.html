@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang vàng du lịch</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, sans-serif;
+      }
+      body {
+        background-color: #f4f4f4;
+      }
+
+      .header {
+        position: relative;
+        width: 100%;
+      }
+
+      .header img {
+        width: 100%;
+        object-fit: cover;
+        height: 450px;
+      }
+
+      .header .title {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -100%);
+        font-size: 4rem;
+        background: linear-gradient(#ffff, #00ff08);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        border: 1px solid #00ff08;
+        padding: 10px 20px;
+        border-radius: 5px;
+        backdrop-filter: blur(5px);
+      }
+
+      .content-center {
+        max-width: 1200px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 40px auto;
+        text-align: center;
+        gap: 20px;
+      }
+
+      .content-center .content {
+        border: 1px solid gray;
+        border-radius: 5px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding: 20px 10px;
+        background: rgba(128, 128, 128, 0.29);
+      }
+
+      .content-center .content p {
+        font-size: 13px;
+      }
+
+      .content-center h3 {
+        margin-bottom: 10px;
+      }
+
+      .content-bottom {
+        max-width: 1200px;
+        margin: 40px auto;
+      }
+
+      .content-bottom .row-content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .row-content .left {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      .row-content .left h2 {
+        margin-bottom: 10px;
+      }
+
+      .row-content .left p {
+        line-height: 1.5;
+        color: gray;
+      }
+
+      .row-content .right {
+        width: 100%;
+      }
+
+      .row-content .right img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .row-content .right iframe {
+        width: 100%;
+        height: 350px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <img
+          src="https://scontent.subi.vn/cmsmedia/tranh-de-tai-cho-tet-320a1094c9be44cfcbe58d38d8c07983.jpg"
+          alt="Câu lạc bộ ngoại khóa"
+        />
+        <h1 class="title">Trang vàng du lịch</h1>
+      </div>
+      <div class="content-center">
+        <div class="content">
+          <h3>Giới thiệu lễ hội</h3>
+          <p>Khám phá các lễ hội truyền thống đặc sắc của Việt Nam.</p>
+        </div>
+        <div class="content">
+          <h3>Thông tin chi tiết</h3>
+          <p>Thời gian, địa điểm, ý nghĩa và các hoạt động chính.</p>
+        </div>
+        <div class="content">
+          <h3>Hình ảnh, video, âm thanh</h3>
+          <p>Trải nghiệm lễ hội qua hình ảnh, video và âm thanh sống động.</p>
+        </div>
+      </div>
+      <div class="content-bottom">
+        <div class="row-content">
+          <div class="left" style="margin-right: 30px">
+            <h2>Lễ hội Gò Đống Đa</h2>
+            <p>
+              Hội Gò Đống Đa được tổ chức để bày tỏ lòng biết ơn tới những anh
+              hùng nghĩa sĩ Tây Sơn, là một trong những lễ hội truyền thống có
+              quy mô lớn, khai hội vào mùa xuân tại Hà Nội
+            </p>
+          </div>
+          <div class="right">
+            <img
+              src="https://images2.thanhnien.vn/Uploaded/huydq/2023_01_26/mduc2328-4696.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+        <div class="row-content">
+          <div class="right">
+            <img
+              src="https://media.mia.vn/uploads/blog-du-lich/festival-hoa-da-lat-tat-tan-tat-ve-le-hoi-hoa-lon-nhat-tai-da-lat-02-1635691105.jpeg"
+              alt=""
+            />
+          </div>
+          <div class="left" style="margin-left: 30px">
+            <h2>Lễ hội hoa Đà Lạt</h2>
+            <p>
+              Mục đích của Festival hoa Đà Lạt là sự kiện nhằm tôn vinh các loại
+              hoa, cây cảnh của địa phương cũng như nhiều vùng trong cả nước để
+              thu hút khách du lịch đến Đà Lạt.
+            </p>
+          </div>
+        </div>
+        <div class="row-content">
+          <div class="left" style="margin-right: 30px">
+            <h2>Lễ hội Kate của người Chăm</h2>
+            <p>
+              Lễ hội Kate là một trong những lễ hội quan trọng nhất của người
+              Chăm theo đạo Bà-la-môn, diễn ra vào tháng 7 Chăm lịch (thường rơi
+              vào tháng 10 Dương lịch). Đây là dịp để cộng đồng tưởng nhớ các vị
+              thần linh, tổ tiên và các vị vua Chăm Pa có công với dân tộc.
+            </p>
+          </div>
+          <div class="right">
+            <iframe
+              src="https://www.youtube.com/embed/LnR4lFQpcn0"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
